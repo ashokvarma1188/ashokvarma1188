@@ -1,11 +1,4 @@
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Hi+There!+I'm+Ashok+Varma+👋;Full+Stack+Developer;Frontend+%2B+Backend+Engineer;Final+Year+@+VIT-AP+University" alt="Typing SVG" />
-</div>
-
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=ashokvarma1188&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile Views" />
-</div>
-
+<h1 align="center">Hi 👋 My name is Ashok Varma</h1>
 ---
 
 ## 👨‍💻 About Me
