@@ -51,6 +51,16 @@
 
 ![LeetCode Stats](https://leetcard.jacoblin.cool/ashokvarma5247?theme=dark&font=Fira%20Code&ext=heatmap)
 
+## 💬 LeetCode Community Stats
+
+<div align="center">
+
+| 👁️ Profile Views | 📝 Solutions | ⭐ Reputation |
+|:-:|:-:|:-:|
+| ![Views](https://img.shields.io/badge/Views-1.3M-blue?style=for-the-badge&logo=leetcode&logoColor=white) | ![Solutions](https://img.shields.io/badge/Solutions-74-orange?style=for-the-badge&logo=leetcode&logoColor=white) | ![Reputation](https://img.shields.io/badge/Reputation-11.3K-yellow?style=for-the-badge&logo=leetcode&logoColor=white) |
+
+</div>
+
 ---
 
 ## 📊 GitHub Stats
@@ -62,26 +72,6 @@
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=ashokvarma1188&theme=tokyonight&hide_border=true)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ashokvarma1188&layout=compact&theme=tokyonight&hide_border=true)
-
-</div>
-
----
-
-## 🏅 GitHub Trophies
-
-<div align="center">
-
-![Trophies](https://github-profile-trophy.vercel.app/?username=ashokvarma1188&theme=darkhub&no-frame=true&margin-w=10)
-
-</div>
-
----
-
-## 🐍 Contribution Graph
-
-<div align="center">
-
-![Snake animation](https://github.com/ashokvarma1188/ashokvarma1188/blob/output/github-contribution-grid-snake-dark.svg)
 
 </div>
 
