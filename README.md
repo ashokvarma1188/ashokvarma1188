@@ -1,12 +1,4 @@
-<h1 align="center">Hi <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"> My name is Ashok Varma</h1>
 
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=ashokvarma1188&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile Views" />
-</div>
-
-<div align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="380" alt="coding gif"/>
-</div>
 
 ---
 
@@ -17,6 +9,16 @@
 - 🌱 Currently deepening my skills in **React** and **System Design**
 - 🚀 Open to internships and entry-level opportunities
 - 🤝 Always happy to collaborate on interesting projects
+
+<h1 align="center">Hi <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"> My name is Ashok Varma</h1>
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=ashokvarma1188&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile Views" />
+</div>
+
+<div align="center">
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="380" alt="coding gif"/>
+</div>
 
 ---
 
@@ -34,7 +36,54 @@
 ## 🛠️ Technical Expertise
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,nodejs,express,java,mongodb,git,github,vscode&theme=dark&perline=5" />
+
+<table>
+  <tr>
+    <td align="center" width="130">
+      <img src="https://techstack-generator.vercel.app/js-icon.svg" width="65" height="65" alt="JavaScript" />
+      <br/><sub><b>JavaScript</b></sub>
+    </td>
+    <td align="center" width="130">
+      <img src="https://techstack-generator.vercel.app/java-icon.svg" width="65" height="65" alt="Java" />
+      <br/><sub><b>Java</b></sub>
+    </td>
+    <td align="center" width="130">
+      <img src="https://techstack-generator.vercel.app/nodejs-icon.svg" width="65" height="65" alt="NodeJS" />
+      <br/><sub><b>Node.js</b></sub>
+    </td>
+    <td align="center" width="130">
+      <img src="https://techstack-generator.vercel.app/github-icon.svg" width="65" height="65" alt="GitHub" />
+      <br/><sub><b>GitHub</b></sub>
+    </td>
+    <td align="center" width="130">
+      <img src="https://techstack-generator.vercel.app/mysql-icon.svg" width="65" height="65" alt="MongoDB" />
+      <br/><sub><b>MongoDB</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="130">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="65" height="65" alt="HTML5" />
+      <br/><sub><b>HTML5</b></sub>
+    </td>
+    <td align="center" width="130">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="65" height="65" alt="CSS3" />
+      <br/><sub><b>CSS3</b></sub>
+    </td>
+    <td align="center" width="130">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" width="65" height="65" alt="Express" style="filter:invert(1)"/>
+      <br/><sub><b>Express.js</b></sub>
+    </td>
+    <td align="center" width="130">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="65" height="65" alt="Git" />
+      <br/><sub><b>Git</b></sub>
+    </td>
+    <td align="center" width="130">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="65" height="65" alt="VS Code" />
+      <br/><sub><b>VS Code</b></sub>
+    </td>
+  </tr>
+</table>
+
 </div>
 
 ---
