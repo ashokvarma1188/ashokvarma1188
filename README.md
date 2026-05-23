@@ -19,7 +19,7 @@
 <div align="center">
   <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="380" alt="coding gif"/>
 </div>
----
+----------
 
 ## 🔗 Connect With Me
 
@@ -110,13 +110,15 @@
 
 ## 📊 GitHub Stats
 
+## 📊 GitHub Stats
+
 <div align="center">
 
-![Ashok's GitHub Stats](https://github-readme-stats.vercel.app/api?username=ashokvarma1188&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
+<img src="https://github-readme-stats.vercel.app/api?username=ashokvarma1188&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&rank_icon=github" width="48%" />
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=ashokvarma1188&theme=tokyonight&hide_border=true)
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=ashokvarma1188&theme=tokyonight&hide_border=true" width="48%" />
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ashokvarma1188&layout=compact&theme=tokyonight&hide_border=true)
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ashokvarma1188&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" width="48%" />
 
 </div>
 
