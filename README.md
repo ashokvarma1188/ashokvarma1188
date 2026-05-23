@@ -1,3 +1,5 @@
+<h1 align="center">Hi <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"> My name is Ashok Varma</h1>
+
 
 
 ---
@@ -10,8 +12,6 @@
 - 🚀 Open to internships and entry-level opportunities
 - 🤝 Always happy to collaborate on interesting projects
 
-<h1 align="center">Hi <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"> My name is Ashok Varma</h1>
-
 <div align="center">
   <img src="https://komarev.com/ghpvc/?username=ashokvarma1188&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile Views" />
 </div>
@@ -19,7 +19,6 @@
 <div align="center">
   <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="380" alt="coding gif"/>
 </div>
-
 ---
 
 ## 🔗 Connect With Me
@@ -48,15 +47,15 @@
       <br/><sub><b>Java</b></sub>
     </td>
     <td align="center" width="130">
-      <img src="https://techstack-generator.vercel.app/nodejs-icon.svg" width="65" height="65" alt="NodeJS" />
+      <img src="https://skillicons.dev/icons?i=nodejs&theme=dark" width="65" height="65" alt="NodeJS" />
       <br/><sub><b>Node.js</b></sub>
     </td>
     <td align="center" width="130">
-      <img src="https://techstack-generator.vercel.app/github-icon.svg" width="65" height="65" alt="GitHub" />
-      <br/><sub><b>GitHub</b></sub>
+      <img src="https://skillicons.dev/icons?i=express&theme=light" width="65" height="65" alt="Express" />
+      <br/><sub><b>Express.js</b></sub>
     </td>
     <td align="center" width="130">
-      <img src="https://techstack-generator.vercel.app/mysql-icon.svg" width="65" height="65" alt="MongoDB" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="65" height="65" alt="MongoDB" />
       <br/><sub><b>MongoDB</b></sub>
     </td>
   </tr>
@@ -70,12 +69,13 @@
       <br/><sub><b>CSS3</b></sub>
     </td>
     <td align="center" width="130">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" width="65" height="65" alt="Express" style="filter:invert(1)"/>
-      <br/><sub><b>Express.js</b></sub>
-    </td>
-    <td align="center" width="130">
+      <img src="https://techstack-generator.vercel.app/js-icon.svg" width="1" height="1" alt="" />
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="65" height="65" alt="Git" />
       <br/><sub><b>Git</b></sub>
+    </td>
+    <td align="center" width="130">
+      <img src="https://img.icons8.com/ios-glyphs/90/ffffff/github.png" width="65" height="65" alt="GitHub" />
+      <br/><sub><b>GitHub</b></sub>
     </td>
     <td align="center" width="130">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="65" height="65" alt="VS Code" />
