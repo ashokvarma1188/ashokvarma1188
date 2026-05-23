@@ -19,13 +19,16 @@
 <div align="center">
   <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="380" alt="coding gif"/>
 </div>
-----------
+
+
+---
 
 ## 🔗 Connect With Me
 
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ashok%20Varma-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ashok-varma-287a03299/)
+<br> 
 [![LeetCode](https://img.shields.io/badge/LeetCode-ashokvarma5247-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/ashokvarma5247/)
 
 </div>
@@ -108,7 +111,7 @@
 
 ---
 
-## 📊 GitHub Stats
+
 
 ## 📊 GitHub Stats
 
