@@ -8,7 +8,6 @@
 
 - 🎓 Final Year B.Tech Student at **VIT-AP University**
 - 💻 Passionate about building full-stack web applications
-- 🌱 Currently deepening my skills in **React** and **System Design**
 - 🚀 Open to internships and entry-level opportunities
 - 🤝 Always happy to collaborate on interesting projects
 
