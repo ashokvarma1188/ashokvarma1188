@@ -130,4 +130,3 @@
   <i>"Code. Learn. Build. Repeat."</i><br><br>
   ⭐ Feel free to explore my repositories and leave a star if you find something useful!
 </div>
-so this is my github readme file so please make this mor emore moree bestiful way desgnis nd moving emojies nd all
