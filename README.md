@@ -139,6 +139,18 @@
 ---
 
 <div align="center">
-  <i>"Code. Learn. Build. Repeat."</i><br><br>
-  ⭐ Feel free to explore my repositories and leave a star if you find something useful!
+
+[![Typing Quote](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1500&color=0E75B6&center=true&vCenter=true&width=500&lines=Code.+Learn.+Build.+Repeat.;Always+shipping+something+new.;Open+to+internships+%26+entry-level+roles.)](https://git.io/typing-svg)
+
+⭐ Feel free to explore my repositories and leave a star if you find something useful!
+
+<br>
+
+[![Let's Connect](https://img.shields.io/badge/Let's_Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ashok-varma-287a03299/)
+[![Open to Internships](https://img.shields.io/badge/Open_to-Internships-2EA44F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ashokvarma1188)
+
+<br>
+
+![Thanks for visiting](https://img.shields.io/badge/Thanks_for_visiting-%E2%9D%A4-FF6B6B?style=for-the-badge)
+
 </div>
