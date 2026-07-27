@@ -104,7 +104,7 @@
 
 | 👁️ Profile Views | 📝 Solutions | ⭐ Reputation |
 |:-:|:-:|:-:|
-| ![Views](https://img.shields.io/badge/Views-1.3M-blue?style=for-the-badge&logo=leetcode&logoColor=white) | ![Solutions](https://img.shields.io/badge/Solutions-74-orange?style=for-the-badge&logo=leetcode&logoColor=white) | ![Reputation](https://img.shields.io/badge/Reputation-11.3K-yellow?style=for-the-badge&logo=leetcode&logoColor=white) |
+| ![Views](https://img.shields.io/badge/Views-1.3M-blue?style=for-the-badge&logo=leetcode&logoColor=white) | ![Solutions](https://img.shields.io/badge/Solutions-74-orange?style=for-the-badge&logo=leetcode&logoColor=white) | ![Reputation](https://img.shields.io/badge/Reputation-11.5K-yellow?style=for-the-badge&logo=leetcode&logoColor=white) |
 
 </div>
 
