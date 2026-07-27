@@ -90,6 +90,26 @@
 
 ---
 
+## 🏆 Competitive Programming
+
+<div align="center">
+
+![LeetCode Stats](https://leetcard.jacoblin.cool/ashokvarma5247?theme=dark&font=Fira%20Code&ext=heatmap)
+
+</div>
+
+## 💬 LeetCode Community Stats
+
+<div align="center">
+
+| 👁️ Profile Views | 📝 Solutions | ⭐ Reputation |
+|:-:|:-:|:-:|
+| ![Views](https://img.shields.io/badge/Views-1.3M-blue?style=for-the-badge&logo=leetcode&logoColor=white) | ![Solutions](https://img.shields.io/badge/Solutions-74-orange?style=for-the-badge&logo=leetcode&logoColor=white) | ![Reputation](https://img.shields.io/badge/Reputation-11.3K-yellow?style=for-the-badge&logo=leetcode&logoColor=white) |
+
+</div>
+
+---
+
 ## 🐍 Contribution Snake
 
 <div align="center">
