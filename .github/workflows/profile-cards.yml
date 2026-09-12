@@ -1,0 +1,43 @@
+name: Refresh profile cards
+
+on:
+  schedule:
+    - cron: "17 3 * * *"     # every day at 03:17 UTC
+  workflow_dispatch:          # or run it by hand from the Actions tab
+  push:
+    branches: [main]
+    paths:
+      - "scripts/generate.py"
+      - ".github/workflows/profile-cards.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate cards from live data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+          LEETCODE_USER: ashokvarma5247
+        run: python scripts/generate.py
+
+      - name: Commit if anything changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A '*.svg'
+          if git diff --staged --quiet; then
+            echo "nothing changed"
+          else
+            git commit -m "chore: refresh profile cards [skip ci]"
+            git push
+          fi
