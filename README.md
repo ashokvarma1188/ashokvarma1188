@@ -47,17 +47,7 @@ motto:      "build → break → learn → ship"
 
 <div align="center">
 
-### Languages
-<img src="https://skillicons.dev/icons?i=js,java,cpp,python&theme=dark" alt="Languages">
-
-### Frontend
-<img src="https://skillicons.dev/icons?i=react,html,css,tailwind&theme=dark" alt="Frontend">
-
-### Backend &amp; Database
-<img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,mysql&theme=dark" alt="Backend and database">
-
-### Tools
-<img src="https://skillicons.dev/icons?i=git,github,vscode,postman,vercel,figma&theme=dark" alt="Tools">
+<img src="https://skillicons.dev/icons?i=js,java,cpp,python,react,html,css,tailwind,nodejs,express,mongodb,mysql,git,github,vscode,postman,vercel,figma&perline=9&theme=dark" alt="Tech stack">
 
 </div>
 
@@ -67,24 +57,17 @@ motto:      "build → break → learn → ship"
 
 <div align="center">
 
-<a href="https://github.com/ashokvarma1188/Smartnest">
-  <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="https://github-readme-stats.vercel.app/api/pin/?username=ashokvarma1188&repo=Smartnest&theme=tokyonight&hide_border=true&bg_color=0A101F&title_color=A78BFA&icon_color=22D3EE">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=ashokvarma1188&repo=Smartnest&hide_border=true" alt="Smartnest">
-  </picture>
-</a>
-<a href="https://github.com/ashokvarma1188/youtube-focus-extension">
-  <picture>
-    <source media="(prefers-color-scheme: dark)"  srcset="https://github-readme-stats.vercel.app/api/pin/?username=ashokvarma1188&repo=youtube-focus-extension&theme=tokyonight&hide_border=true&bg_color=0A101F&title_color=A78BFA&icon_color=22D3EE">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=ashokvarma1188&repo=youtube-focus-extension&hide_border=true" alt="YouTube Focus Extension">
-  </picture>
-</a>
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/ashokvarma1188/ashokvarma1188/main/projects.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ashokvarma1188/ashokvarma1188/main/projects-light.svg">
+  <img alt="Featured projects" src="https://raw.githubusercontent.com/ashokvarma1188/ashokvarma1188/main/projects.svg" width="100%">
+</picture>
 
 </div>
 
-**Smartnest** — a full-stack real-estate platform that puts owners and buyers in direct contact, cutting the middleman out of the listing process.
+**[Smartnest](https://github.com/ashokvarma1188/Smartnest)** — a full-stack real-estate platform that puts owners and buyers in direct contact, cutting the middleman out of the listing process.
 
-**YouTube Focus Extension** — a browser extension that strips the distractions out of YouTube so it stays a study tool instead of a rabbit hole.
+**[YouTube Focus Extension](https://github.com/ashokvarma1188/youtube-focus-extension)** — a browser extension that strips the distractions out of YouTube so it stays a study tool instead of a rabbit hole.
 
 ---
 
@@ -103,12 +86,9 @@ motto:      "build → break → learn → ship"
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://github-readme-stats.vercel.app/api?username=ashokvarma1188&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&theme=tokyonight&bg_color=0A101F&title_color=A78BFA&icon_color=22D3EE&text_color=DCE3F5">
-  <img src="https://github-readme-stats.vercel.app/api?username=ashokvarma1188&show_icons=true&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub stats" height="170">
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=ashokvarma1188&layout=compact&langs_count=8&hide_border=true&theme=tokyonight&bg_color=0A101F&title_color=A78BFA&text_color=DCE3F5">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ashokvarma1188&layout=compact&langs_count=8&hide_border=true" alt="Top languages" height="170">
+  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/ashokvarma1188/ashokvarma1188/main/stats.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ashokvarma1188/ashokvarma1188/main/stats-light.svg">
+  <img alt="GitHub statistics" src="https://raw.githubusercontent.com/ashokvarma1188/ashokvarma1188/main/stats.svg" width="100%">
 </picture>
 
 <br>
