@@ -437,6 +437,8 @@ def contributions():
                 counts[tid] = 0 if m.group(1) == "No" else int(m.group(1).replace(",", ""))
         for tid, date in ids.items():
             days.append((date, counts.get(tid, 0)))
+    today = datetime.date.today().isoformat()
+    days = [(d, c) for d, c in days if d <= today]   # the year grid includes future dates
     days.sort()
     if not days:
         raise ValueError("no contribution days parsed")
