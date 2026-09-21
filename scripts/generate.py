@@ -355,32 +355,39 @@ def projects_card(theme, repos):
     return "".join(s)
 
 
-def stats_card(theme, st):
+def stats_card(theme, st, contrib):
     t = THEMES[theme]
-    h = 196
+    h = 250
     tiles = [("Public repos", st["public_repos"]), ("Original repos", st["original"]),
              ("Total stars", st["stars"]), ("Followers", st["followers"])]
+    ctiles = [("Total contributions", contrib["total"]),
+              ("Current streak", contrib["current"]),
+              ("Longest streak", contrib["longest"])]
     s = [head(h, "GitHub statistics"), "<defs>" + accent(t, "acc") + "</defs>"]
-    s.append('<rect width="%d" height="%d" fill="%s" rx="12"/>' % (W, h, t["bg"] if theme == "light" else t["panel"]))
+    s.append('<rect width="%d" height="%d" fill="%s" rx="12"/>'
+             % (W, h, t["bg"] if theme == "light" else t["panel"]))
     s.append('<rect x="1" y="1" width="%d" height="%d" rx="12" fill="%s" stroke="%s"/>'
              % (W - 2, h - 2, t["card"], t["stroke"]))
     s.append('<rect x="1" y="1" width="%d" height="4" fill="url(#acc)"/>' % (W - 2))
+
     s.append('<text x="30" y="40" font-size="10" letter-spacing="3" fill="%s">REPOSITORY.STATS</text>' % t["cyan"])
     for i, (lab, val) in enumerate(tiles):
         x = 30 + i * 128
         s.append('<text x="%d" y="84" font-size="30" font-weight="700" fill="%s">%s</text>' % (x, t["tile"], val))
         s.append('<text x="%d" y="106" font-size="11" fill="%s">%s</text>' % (x, t["sub"], lab))
-    s.append('<line x1="30" y1="132" x2="530" y2="132" stroke="%s"/>' % t["track"])
-    s.append('<text x="30" y="160" font-size="12" fill="%s">Building with the MERN stack '
-             '· open to internships</text>' % t["muted"])
+    s.append('<line x1="30" y1="126" x2="530" y2="126" stroke="%s"/>' % t["track"])
+
+    s.append('<text x="30" y="152" font-size="10" letter-spacing="3" fill="%s">CONTRIBUTIONS</text>' % t["cyan"])
+    for i, (lab, val) in enumerate(ctiles):
+        x = 30 + i * 170
+        s.append('<text x="%d" y="196" font-size="30" font-weight="700" fill="%s">%s</text>' % (x, t["tile"], val))
+        s.append('<text x="%d" y="218" font-size="11" fill="%s">%s</text>' % (x, t["sub"], lab))
 
     lx, lw = 600, 550
     langs = st["langs"] or [("JavaScript", 1)]
     total = sum(n for _, n in langs) or 1
-    s.append('<text x="%d" y="40" font-size="10" letter-spacing="3" fill="%s">TOP.LANGUAGES</text>'
-             % (lx, t["cyan"]))
-    s.append('<clipPath id="barclip"><rect x="%d" y="56" width="%d" height="12" rx="6"/></clipPath>'
-             % (lx, lw))
+    s.append('<text x="%d" y="40" font-size="10" letter-spacing="3" fill="%s">TOP.LANGUAGES</text>' % (lx, t["cyan"]))
+    s.append('<clipPath id="barclip"><rect x="%d" y="56" width="%d" height="12" rx="6"/></clipPath>' % (lx, lw))
     s.append('<g clip-path="url(#barclip)">')
     off = 0.0
     for name, n in langs:
@@ -396,8 +403,69 @@ def stats_card(theme, st):
         s.append('<text x="%d" y="%d" font-size="13" fill="%s">%s</text>' % (cx + 20, cy, t["tile"], escape(name)))
         s.append('<text x="%d" y="%d" font-size="13" text-anchor="end" fill="%s">%.1f%%</text>'
                  % (cx + 240, cy, t["sub"], 100.0 * n / total))
+    s.append('<line x1="600" y1="170" x2="1150" y2="170" stroke="%s"/>' % t["track"])
+    s.append('<text x="600" y="200" font-size="12" fill="%s">Building with the MERN stack '
+             '· open to internships</text>' % t["muted"])
     s.append("</svg>")
     return "".join(s)
+
+
+def contributions():
+    """Daily contribution counts from GitHub's public calendar. No token needed."""
+    import datetime
+    prof = get_json("https://api.github.com/users/" + USER,
+                    {"User-Agent": "profile-card-generator"})
+    start = int(prof.get("created_at", "2024")[:4])
+    days = []
+    for yr in range(start, datetime.date.today().year + 1):
+        url = ("https://github.com/users/%s/contributions?from=%d-01-01&to=%d-12-31"
+               % (USER, yr, yr))
+        req = urllib.request.Request(url, headers={
+            "User-Agent": "Mozilla/5.0", "X-Requested-With": "XMLHttpRequest"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            html = r.read().decode("utf-8", "replace")
+        ids = {}
+        for tag in re.findall(r"<td[^>]*ContributionCalendar-day[^>]*>", html):
+            d = re.search(r'data-date="([^"]+)"', tag)
+            i = re.search(r'id="([^"]+)"', tag)
+            if d and i:
+                ids[i.group(1)] = d.group(1)
+        counts = {}
+        for tid, txt in re.findall(r'<tool-tip[^>]*for="([^"]+)"[^>]*>([^<]*)</tool-tip>', html):
+            m = re.match(r"\s*(No|[\d,]+)\s+contribution", txt)
+            if m:
+                counts[tid] = 0 if m.group(1) == "No" else int(m.group(1).replace(",", ""))
+        for tid, date in ids.items():
+            days.append((date, counts.get(tid, 0)))
+    days.sort()
+    if not days:
+        raise ValueError("no contribution days parsed")
+    total = sum(c for _, c in days)
+    longest = run = 0
+    for _, c in days:
+        run = run + 1 if c > 0 else 0
+        longest = max(longest, run)
+    current = 0
+    for i in range(len(days) - 1, -1, -1):
+        if days[i][1] > 0:
+            current += 1
+        elif i == len(days) - 1:
+            continue            # nothing pushed yet today - streak is still alive
+        else:
+            break
+    return dict(total=total, current=current, longest=longest)
+
+
+def previous_contrib():
+    """Reuse the numbers already on the card if GitHub can't be reached."""
+    try:
+        s = open("stats.svg", encoding="utf-8").read()
+        got = re.findall(r'font-size="30" font-weight="700"[^>]*>(\d+)<', s)
+        if len(got) >= 7:
+            return dict(total=int(got[4]), current=int(got[5]), longest=int(got[6]))
+    except OSError:
+        pass
+    return dict(total=0, current=0, longest=0)
 
 
 # ---------------------------------------------------------------- main
@@ -417,6 +485,11 @@ def main():
         print("github stats failed: %s - keeping existing cards" % e, file=sys.stderr)
         st = None
     try:
+        contrib = contributions()
+    except Exception as e:
+        contrib = previous_contrib()
+        print("contributions failed: %s - reusing %s" % (e, contrib), file=sys.stderr)
+    try:
         solved = leetcode_solved()
     except Exception as e:
         solved = previous_solved()
@@ -428,7 +501,7 @@ def main():
         name = "dark.svg" if theme == "dark" else "light.svg"
         open(name, "w", encoding="utf-8").write(banner(theme, pngs[theme], solved))
         if st:
-            open("stats%s.svg" % suffix, "w", encoding="utf-8").write(stats_card(theme, st))
+            open("stats%s.svg" % suffix, "w", encoding="utf-8").write(stats_card(theme, st, contrib))
             open("projects%s.svg" % suffix, "w", encoding="utf-8").write(projects_card(theme, st["repos"]))
     print("solved=%s stats=%s" % (solved, "ok" if st else "skipped"))
 
