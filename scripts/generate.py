@@ -355,61 +355,6 @@ def projects_card(theme, repos):
     return "".join(s)
 
 
-def stats_card(theme, st, contrib):
-    t = THEMES[theme]
-    h = 250
-    tiles = [("Public repos", st["public_repos"]), ("Original repos", st["original"]),
-             ("Total stars", st["stars"]), ("Followers", st["followers"])]
-    ctiles = [("Total contributions", contrib["total"]),
-              ("Current streak", contrib["current"]),
-              ("Longest streak", contrib["longest"])]
-    s = [head(h, "GitHub statistics"), "<defs>" + accent(t, "acc") + "</defs>"]
-    s.append('<rect width="%d" height="%d" fill="%s" rx="12"/>'
-             % (W, h, t["bg"] if theme == "light" else t["panel"]))
-    s.append('<rect x="1" y="1" width="%d" height="%d" rx="12" fill="%s" stroke="%s"/>'
-             % (W - 2, h - 2, t["card"], t["stroke"]))
-    s.append('<rect x="1" y="1" width="%d" height="4" fill="url(#acc)"/>' % (W - 2))
-
-    s.append('<text x="30" y="40" font-size="10" letter-spacing="3" fill="%s">REPOSITORY.STATS</text>' % t["cyan"])
-    for i, (lab, val) in enumerate(tiles):
-        x = 30 + i * 128
-        s.append('<text x="%d" y="84" font-size="30" font-weight="700" fill="%s">%s</text>' % (x, t["tile"], val))
-        s.append('<text x="%d" y="106" font-size="11" fill="%s">%s</text>' % (x, t["sub"], lab))
-    s.append('<line x1="30" y1="126" x2="530" y2="126" stroke="%s"/>' % t["track"])
-
-    s.append('<text x="30" y="152" font-size="10" letter-spacing="3" fill="%s">CONTRIBUTIONS</text>' % t["cyan"])
-    for i, (lab, val) in enumerate(ctiles):
-        x = 30 + i * 170
-        s.append('<text x="%d" y="196" font-size="30" font-weight="700" fill="%s">%s</text>' % (x, t["tile"], val))
-        s.append('<text x="%d" y="218" font-size="11" fill="%s">%s</text>' % (x, t["sub"], lab))
-
-    lx, lw = 600, 550
-    langs = st["langs"] or [("JavaScript", 1)]
-    total = sum(n for _, n in langs) or 1
-    s.append('<text x="%d" y="40" font-size="10" letter-spacing="3" fill="%s">TOP.LANGUAGES</text>' % (lx, t["cyan"]))
-    s.append('<clipPath id="barclip"><rect x="%d" y="56" width="%d" height="12" rx="6"/></clipPath>' % (lx, lw))
-    s.append('<g clip-path="url(#barclip)">')
-    off = 0.0
-    for name, n in langs:
-        seg = lw * n / total
-        s.append('<rect x="%.1f" y="56" width="%.1f" height="12" fill="%s"/>'
-                 % (lx + off, seg + 0.6, LANG_COLORS.get(name, t["label"])))
-        off += seg
-    s.append("</g>")
-    for i, (name, n) in enumerate(langs):
-        cx = lx + (i % 2) * 280
-        cy = 104 + (i // 2) * 30
-        s.append('<circle cx="%d" cy="%d" r="6" fill="%s"/>' % (cx + 6, cy - 5, LANG_COLORS.get(name, t["label"])))
-        s.append('<text x="%d" y="%d" font-size="13" fill="%s">%s</text>' % (cx + 20, cy, t["tile"], escape(name)))
-        s.append('<text x="%d" y="%d" font-size="13" text-anchor="end" fill="%s">%.1f%%</text>'
-                 % (cx + 240, cy, t["sub"], 100.0 * n / total))
-    s.append('<line x1="600" y1="170" x2="1150" y2="170" stroke="%s"/>' % t["track"])
-    s.append('<text x="600" y="200" font-size="12" fill="%s">Building with the MERN stack '
-             '· open to internships</text>' % t["muted"])
-    s.append("</svg>")
-    return "".join(s)
-
-
 def contributions():
     """Daily contribution counts from GitHub's public calendar. No token needed."""
     import datetime
@@ -503,7 +448,6 @@ def main():
         name = "dark.svg" if theme == "dark" else "light.svg"
         open(name, "w", encoding="utf-8").write(banner(theme, pngs[theme], solved))
         if st:
-            open("stats%s.svg" % suffix, "w", encoding="utf-8").write(stats_card(theme, st, contrib))
             open("projects%s.svg" % suffix, "w", encoding="utf-8").write(projects_card(theme, st["repos"]))
     print("solved=%s stats=%s" % (solved, "ok" if st else "skipped"))
 

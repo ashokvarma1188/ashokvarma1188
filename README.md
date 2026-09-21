@@ -131,9 +131,8 @@ motto:      "build → break → learn → ship"
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/ashokvarma1188/ashokvarma1188/main/stats.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ashokvarma1188/ashokvarma1188/main/stats-light.svg">
-  <img alt="GitHub statistics" src="https://raw.githubusercontent.com/ashokvarma1188/ashokvarma1188/main/stats.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)"  srcset="https://github-readme-streak-stats.herokuapp.com/?user=ashokvarma1188&hide_border=true&theme=tokyonight&background=0A101F&ring=A78BFA&fire=22D3EE&currStreakLabel=A78BFA">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ashokvarma1188&hide_border=true" alt="Streak stats">
 </picture>
 
 </div>
