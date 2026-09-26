@@ -9,9 +9,9 @@
 
 <br><br>
 
-<a href="https://www.linkedin.com/in/ashok-varma-287a03299/">
+<!-- <a href="https://www.linkedin.com/in/ashok-varma-287a03299/">
   <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Ashok%20Varma-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
-</a>
+</a>  -->
 <a href="https://leetcode.com/u/ashokvarma5247/">
   <img alt="LeetCode" src="https://img.shields.io/badge/LeetCode-ashokvarma5247-FFA116?style=for-the-badge&logo=leetcode&logoColor=black">
 </a>
